@@ -79,9 +79,11 @@
     [
       "@semantic-release/github",
       {
-        "assets": [
-          {"path": "artefact.txt", "label": "My Released Artefact"}
-        ]
+        "assets": [{"path": "artefact.txt", "label": "My Released Artefact"}],
+        "options": {
+          "successComment": false,
+          "failComment": false
+        }
       }
     ]
   ],
