@@ -1,0 +1,85 @@
+{
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "releaseRules": [
+          {
+            "breaking": true,
+            "release": "major"
+          },
+          {
+            "type": "refactoring",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "release": "patch"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "types": [
+            {
+              "type": "feat",
+              "section": "New Feature(s) 🚀"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fix(es) 🐛️"
+            },
+            {
+              "type": "docs",
+              "section": "Documentation Changes 📝"
+            },
+            {
+              "type": "refactor",
+              "section": "Code Refactor 💅"
+            },
+            {
+              "type": "test",
+              "section": "Tests 📡️"
+            },
+            {
+              "type": "perf",
+              "section": "Performance Improvement(s) 🚄️"
+            },
+            {
+              "type": "build",
+              "section": "Build system 🛠️"
+            },
+            {
+              "type": "refactoring",
+              "section": "Refactoring ♻️"
+            }
+          ]
+        }
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md",
+        "changelogTitle": "# Semantic Release Playground Changelog"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"],
+        "message": "chore(release): ${nextRelease.version} [ci skip]"
+      }
+    ]
+  ],
+  "branches": [
+    {"name": "main"},
+    {"name": "release/*", "channel": "rc", "prerelease": "rc"},
+    {"name": "release", "channel": "rc", "prerelease": "rc"}
+  ]
+}
