@@ -1,5 +1,15 @@
 # Semantic Release Playground Changelog
 
+## [1.3.0](https://github.com/jritter/semantic-release-playground/compare/v1.2.0...v1.3.0) (2024-10-22)
+
+### New Feature(s) 🚀
+
+* Impress Pesche ([2850faa](https://github.com/jritter/semantic-release-playground/commit/2850faaefc04a7522b1f561e8744989fbedb458a))
+
+### Bug Fix(es) 🐛️
+
+* Demo bugfix ([7820f29](https://github.com/jritter/semantic-release-playground/commit/7820f2963f618ff0f48e6556f5e0d79b19faa355))
+
 ## [1.2.0](https://github.com/jritter/semantic-release-playground/compare/v1.1.1...v1.2.0) (2024-10-22)
 
 ### New Feature(s) 🚀
