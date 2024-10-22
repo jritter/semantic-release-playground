@@ -75,6 +75,14 @@
         "assets": ["CHANGELOG.md"],
         "message": "chore(release): ${nextRelease.version} [ci skip]"
       }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {"path": "artefact.txt", "label": "My Released Artefact"}
+        ]
+      }
     ]
   ],
   "branches": [
