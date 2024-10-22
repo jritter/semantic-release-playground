@@ -1,5 +1,11 @@
 # Semantic Release Playground Changelog
 
+## [1.2.0](https://github.com/jritter/semantic-release-playground/compare/v1.1.1...v1.2.0) (2024-10-22)
+
+### New Feature(s) 🚀
+
+* New demo feature ([5c622e0](https://github.com/jritter/semantic-release-playground/commit/5c622e087b3247a4bd37ec7459586e1e3fdcb637))
+
 ## [1.1.1](https://github.com/jritter/semantic-release-playground/compare/v1.1.0...v1.1.1) (2024-10-22)
 
 ### Bug Fix(es) 🐛️
